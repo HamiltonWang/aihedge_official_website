@@ -1,0 +1,109 @@
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo/logo2.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer-widget">
+            <div class="col-lg-3 col-sm-3 col-md-2">
+                <div class="single-footer-widget">
+                    <ul class="list">
+                        <!--<li><span>Location:</span> <br>Kaohsiung Software Park, 2F., No. 25, Chenggong 2nd Rd., Qianzhen Dist., Kaohsiung City 806, Taiwan</li>-->
+                        <!--<li><span>Email:</span> <br>mellisa@aiart.io</li>-->
+                        <ul class="social-links">
+                            <li><a href="https://aiart.io/" target="_blank"><i class="fas fa-globe"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/aiart/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://t.me/aiartinc" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-md-3">
+                <div class="single-footer-widget">
+                    <ul class="list">
+                        <li><a href="/" class="lang" key="Home"></a></li>
+                        <li><a href="/learn" class="lang" key="Learn"></a></li>
+                         <!--<li><a href="/docs">Docs</a></li>-->
+                        <li><a href="/careers" class="lang" key="Careers"></a></li>
+                        <li><a href="/contact" class="lang" key="Contact"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-md-4">
+                <div class="single-footer-widget">
+                    <ul class="list">
+                        <li><a href="/privacy" class="lang" key="Privacy"></a></li>
+                        <li><a href="/terms" class="lang" key="Terms"></a></li>
+                        <li><a href="/disclaimer" class="lang" key="Disclaimer"></a></li>
+                        <li><a href="/trademark" class="lang" key="Trademark"></a></li>
+                        <li><a href="/brand" class="lang" key="Brand"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-sm-4 col-md-3">
+                <div class="single-footer-widget">
+                    <ul class="list">
+                        <li><img src="/images/logo/aiart-logo.png" alt="logo" class="logo2"></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group language">
+                    <button key="Language" class="btn-second2 dropdown-toggle lang" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item translate" href="#" id="en"><img src="/images/en.png" alt="en">English</a></li>
+                        <li><a class="dropdown-item translate" href="#" id="tw"><img src="/images/tw.png" alt="tw">繁體中文</a></li>
+                        <li><a class="dropdown-item translate" href="#" id="ch"><img src="/images/ch.png" alt="ch">简体中文</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area">
+            <p class="lang" key="Copyright"></p> 
+            <p> &copy; 2021-2024 <a href="#">AI Art Inc</a>.</p>
+            <p class="lang" key="All rights reserved"></p> 
+        </div>
+    </div>
+
+
+    <script>
+    // The default language is English
+    var lang = "en";
+    // Check for localStorage support
+    if('localStorage' in window){
+        var lang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
+        if (!Object.keys(arrLang).includes(lang)) lang = 'en';
+    }
+
+    $(document).ready(function() {
+        $(".lang").each(function(index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+    });
+
+    // get/set the selected language
+    $(".translate").click(function() {
+        var lang = $(this).attr("id");
+
+    // update localStorage key
+    if('localStorage' in window){
+        localStorage.setItem('lang', lang);
+        console.log( localStorage.getItem('lang') );
+    }
+
+    $(".lang").each(function(index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+    });
+    </script>
+
+
+</footer>
