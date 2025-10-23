@@ -2,13 +2,15 @@
   "name": "aihedgeweb",
   "version": "0.1.5",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
-    "start": "nohup node ./bin/www >/dev/null &",
+    "start": "node ./bin/www",
+    "build": "npm install",
+    "dev": "node --inspect ./bin/www",
     "stop": "kill $(lsof -ti :8000)",
-    "restart": "npm run stop && npm run start",
-    "debug": "node --nolazy --inspect-brk ./bin/www",
-    "deploy": "sudo cp -r /home/hamiltonwong/aihedge_official_website/aihedge-web /home/zhang/Website && cd /home/zhang/Website/aihedge-web && sudo npm i --production && npm run restart"
-
+    "restart": "npm run stop && npm run start"
   },
   "dependencies": {
     "aipayjs-lib": "^0.1.5",
