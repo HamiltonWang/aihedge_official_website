@@ -524,6 +524,22 @@ Main Banner Area CSS
   margin-bottom: 28pt;
 }
 
+/* Always center overview content on all screen sizes */
+.overview-box .overview-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.overview-box .overview-content .content {
+  padding-left: 0;
+  max-width: 600px;         /* adjust if you want wider/narrower */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-banner-content {
   margin-top: -20px;
   max-width: 600px;

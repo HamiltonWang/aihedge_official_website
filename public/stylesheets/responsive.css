@@ -257,6 +257,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* move to style.css
   .overview-box .overview-content {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -274,7 +276,12 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  } */
+
+  .overview-box .overview-content {
+    padding-top: 40px;  /* we keep only the extra padding for mobile */
   }
+
   .overview-box .overview-content .content .bar {
     margin-left: auto;
     margin-right: auto;
