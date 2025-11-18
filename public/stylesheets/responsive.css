@@ -1,488 +1,298 @@
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 15px;
+/*================================================
+Responsive Area CSS
+=================================================*/
+
+/* Desktop / Large screens */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  p {
-    font-size: 15px;
-  }
-  .ptb-70 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  h1 {
-    font-size: 38px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  h3 {
-    font-size: 19px;
-  }
-  h4 {
-    font-size: 15px;
-  }
-  span {
-    font-size: 15px;
-    font-weight: 700;
-  }
-  
-  /*section-title*/
-  .section-title {
+
+  /* Overview – single column, centered */
+  .overview-box .overview-content {
+    flex: 0 0 100%;
     max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: -25px;
-    margin-top: -30pt;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  .section-title h2{
-    margin-top: -5pt;
-  }
-
-  .section-title .bar {
-    margin: 10px auto 14px;
-  }  
-  
-  /*single-features*/
-  .single-features-box {
+  .overview-box .overview-content .content {
+    max-width: 600px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-left: -30px;
-    margin-right: -30px;
-    margin-top: -30px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
   }
 
-  /*page-title*/
-  .page-title-area::after {
-    display: none;
-  }
-
-  /*footer-area*/
-  .footer-area .social-links li a {
-    width: 27px;
-    height: 27px;
-    text-align: center;
-    line-height: 28px;
-    vertical-align: middle;
-    border-radius: 50%;
-    color: #000000;
-    display: inline-block;
-  }
-
-  .footer-area .single-footer-widget{
-    margin-top: 16px;
-  }
-
-  .footer-area .footer-widget{
-    padding-top: 16px;
-    padding-bottom: 30px;
-  }
-
-  /*main-banner*/
-  .main-banner {
-    height: 100%;
-    padding-top: 110px;
-    padding-bottom: 150px;
-  }
-  .main-banner-content {
-    margin-top: 0;
+  /* Overview – single column, centered */
+  .overview-box .overview-content {
+    flex: 0 0 100%;
     max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .overview-box .overview-content .content {
+    max-width: 600px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-  }
-  .main-banner-content .btn {
-    margin-top: 25px;
-  }
-  .main-banner-smtext {
-    margin-top: -45px;
   }
 
   .aihedge-area .single-features {
-    height: auto;
-  }
-
-  /*Investment Area*/
-  .investment-area{
-    margin-top: -14px;
-    margin-bottom: 0px;
-  }
-
-  .investment-area .single-features {
-    text-align: center;
-    display: block;
-    padding: 16px 0px;
-  }
-
-  /*moreproduct-area*/
-  .single-logo-box {
-    margin-top: 20pt;
-  }
-
-  /*aboutteam-area*/
-  .aboutteam-area .section-title {
-    margin-bottom: 20pt;
-  }
-  .aboutteam-area .single-features-box {
-    margin-top: -20pt;
-  }
-
-  /*careers-area*/
-  .careers-area .single-features-box {
-    margin-bottom: -10pt;
-  }
-
-  /*main-banner*/
-  .main-banner {
-    background-color: black;
-    background-image: none;
-  }
-
-  /*copyright-area*/
-  .copyright-area p {
-    font-size: 13px;
-  }
-
-  /*overview-box*/
-  .overview-box .overview-content {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 40px;
-  }
-  .overview-box .overview-content .content {
-    padding-left: 0;
-    max-width: 100%;
-    text-align: center;
-  }
-  .overview-box .overview-content .content.left-content {
-    margin-left: 0;
-    padding-right: 0;
-  }
-  .overview-box .overview-content .content h2 {
-    font-size: 26px;
-    line-height: 1.3;
-  }
-  .overview-box .overview-content .content .bar {
-    height: 4px;
-    margin: 20px auto 20px;
-  }
-  .overview-box .overview-content .content .services-list {
-    text-align: left;
-  }
-  .overview-box .overview-content .content .services-list li {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .overview-box .overview-content .content .btn {
-    margin-top: 25px;
-  }
-  .overview-box .overview-image {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 55px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  /*Learn Area*/
-  /*.learn-block-area i{
-    display: none;
-  }
-  .learn-block-area a {
-    text-decoration:none;
-    color: #000;
-    padding: 5px 6px;
-    border-radius: 8px;
-    font-weight: 700;
-    background: #fff;
-  }*/
-
-  .learn-title-area {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    height: 360px;
   }
 
   .learn-area .single-features {
-    height: 300px;
-    margin-bottom: 18px;
-  }
-
-  .article-area p,.article-area li {
-    font-size: 12pt;
-    line-height: 20pt;
-  }
-  
-  .article-area h3 {
-    font-size: 18pt;
-  }
-
-  .learn-all-area {
-    margin-bottom: -20px;
-  }
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 900px) {
-  .section-title {
-    max-width: 600px;
-  }
-  .main-banner {
-    height: 100%;
-    padding-top: 220px;
-    padding-bottom: 230px;
-  }
-  .main-banner-section {
-    height: 100%;
-    padding-top: 165px;
-    padding-bottom: 220px;
-  }
-  .banner-content {
-    margin-top: 0;
-    text-align: center;
-  }
-  .banner-content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* move to style.css
-  .overview-box .overview-content {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .overview-box .overview-content .content {
-    padding-left: 0;
-    max-width: 600px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
-  .overview-box .overview-content {
-    padding-top: 40px;  /* we keep only the extra padding for mobile */
-  }
-
-  .overview-box .overview-content .content .bar {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .overview-box .overview-content .content.left-content {
-    padding-right: 0;
-  }
-  .overview-box .overview-content .content .services-list {
-    text-align: left;
-  }
-  .overview-box .overview-content .content .features-list {
-    text-align: left;
-  }
-  .overview-box .overview-image {
-    text-align: center;
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .investment-area .single-features {
-    text-align: center;
-    display: block;
-    padding: 16px 0px;
+    height: 350px;
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1700px) {
-  .section-title {
-    max-width: 600px;
+/* Tablets / small desktops: 901–991 */
+@media only screen and (min-width: 901px) and (max-width: 991px) {
+  .container {
+    max-width: 900px;
   }
-  .main-banner {
-    height: 100%;
-    padding-top: 220px;
-    padding-bottom: 230px;
-  }
-  .main-banner-section {
-    height: 100%;
-    padding-top: 165px;
-    padding-bottom: 220px;
-  }
-  .banner-content {
-    margin-top: 0;
-    text-align: center;
-  }
-  .banner-content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+  /* Overview – single column, centered */
   .overview-box .overview-content {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .overview-box .overview-content .content {
-    padding-left: 0;
     max-width: 600px;
-    text-align: center;
+    padding-left: 0;
     margin-left: auto;
     margin-right: auto;
-  }
-  .overview-box .overview-content .content .bar {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .overview-box .overview-content .content.left-content {
-    padding-right: 0;
-  }
-  .overview-box .overview-content .content .services-list {
-    text-align: left;
-  }
-  .overview-box .overview-content .content .features-list {
-    text-align: left;
-  }
-  .overview-box .overview-image {
     text-align: center;
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
+
   .aihedge-area .single-features {
-    height: 315px;
+    height: 350px;
+  }
+
+  .learn-area .single-features {
+    height: 350px;
   }
 }
 
+/* Tablets: 768–900 */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .container {
+    width: 92%;
+  }
 
-@media only screen and (max-width: 766px) {
+  /* Overview – single column, centered */
+  .overview-box .overview-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .overview-box .overview-content .content {
+    max-width: 600px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .aihedge-area .single-features {
+    height: 350px;
+  }
+
+  .learn-area .single-features {
+    height: 350px;
+  }
+
+  .message-area .single-features {
+    height: 280px;
+  }
+}
+
+/* Mobile: max 767 */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 92%;
+  }
+
   .luvion-nav {
     display: none;
   }
 
   .luvion-nav-rwd {
-    position: fixed/*absolute*/;
-    left: 0;
-    top: 0;
+    display: block;
+  }
+
+  .page-title-area {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+
+  .page-title-content h1 {
+    font-size: 36px;
+  }
+
+  .page-title-content h4 {
+    font-size: 18px;
+  }
+
+  .main-banner {
     height: auto;
-    z-index: 999;
-  }
-  
-  .luvion-nav-rwd .navbar-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-top:2px #222222 solid;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
 
-  .luvion-nav-rwd .navbar {
-    border-bottom:2px #2c2c2c solid;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+  .main-banner-content {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .luvion-nav-rwd .navbar .navbar-nav .nav-item a {
-    font-size: 17px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  /* Overview – single column, centered */
+  .overview-box .overview-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
   }
 
-  .luvion-nav-rwd .navbar .navbar-nav .nav-item:hover a, .luvion-nav-rwd .navbar .navbar-nav .nav-item.active a {
-    color: #35edd6;
+  .overview-box .overview-content .content {
+    max-width: 100%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .whatwedo-area .image {
+    margin-top: 20pt;
+  }
+
+  .aihedge-area .single-features {
+    height: auto;
+  }
+
+  .learn-area .single-features {
+    height: auto;
+  }
+
+  .message-area .single-features {
+    height: auto;
+  }
+
+  .aboutteam-area img {
+    margin-top: 0;
+  }
+
+  .aboutteam-area .single-features-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .careers-area .single-features-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .learn-block-area li {
+    display: inline-block;
+  }
+
+  .learn-block-area .li-rwd {
+    margin-bottom: 18px;
+  }
+
+  .learn-block-area a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 8px;
+    border-radius: 8px;
     font-weight: 700;
+    background: #fff;
   }
-
 }
 
+/* Very small devices: 376–575 */
 @media only screen and (min-width: 376px) and (max-width: 575px) {
   .container {
     width: 92%;
   }
 }
 
+/* 415–540 (some larger phones) */
 @media only screen and (min-width: 415px) and (max-width: 540px) {
   .container {
     width: 92%;
   }
+
   .learn-area .single-features {
     height: 350px;
   }
 }
 
+/* Extra small phones: 281–375 */
 @media only screen and (min-width: 281px) and (max-width: 375px) {
   .container {
     width: 92%;
   }
-  /*Learn Area*/
-  .learn-block-area li{
+
+  /* Learn Area */
+  .learn-block-area li {
     display: inline-block;
   }
-  .learn-block-area .li-rwd{
+
+  .learn-block-area .li-rwd {
     margin-bottom: 18px;
   }
+
   .learn-block-area a {
-    text-decoration:none;
+    text-decoration: none;
     color: #000;
-    padding: 5px px;
+    padding: 5px 8px;
     border-radius: 8px;
     font-weight: 700;
     background: #fff;
   }
 }
 
+/* Ultra small: max 281 */
 @media only screen and (max-width: 281px) {
   .container {
     width: 90%;
   }
-  /*Learn Area*/
-  .learn-block-area li{
+
+  /* Learn Area */
+  .learn-block-area li {
     display: block;
   }
-  .learn-block-area .li-rwd{
+
+  .learn-block-area .li-rwd {
     margin-bottom: 18px;
   }
+
   .learn-block-area a {
-    text-decoration:none;
+    text-decoration: none;
     color: #000;
-    padding: 5px px;
+    padding: 5px 8px;
     border-radius: 8px;
     font-weight: 700;
     background: #fff;
   }
+
   .learn-area .single-features {
     height: 280px;
   }
@@ -490,4 +300,57 @@
   .aihedge-area .single-features {
     height: auto;
   }
+}
+
+/* Mobile navbar styles (from your snippet) */
+.luvion-nav-rwd {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  background-color: #000;
+  transition: 0.5s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.luvion-nav-rwd .navbar {
+  padding: 0;
+}
+
+.luvion-nav-rwd .navbar ul {
+  list-style-type: none;
+}
+
+.luvion-nav-rwd .navbar .navbar-nav {
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+}
+
+.luvion-nav-rwd .navbar .navbar-nav .nav-item {
+  position: relative;
+  padding: 10px 0;
+}
+
+.luvion-nav-rwd .navbar .navbar-nav .nav-item a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0 3px;
+  transition: 0.7s;
+}
+
+.luvion-nav-rwd .navbar .navbar-nav .nav-item a i {
+  font-size: 10px;
+  margin-left: 1px;
+}
+
+.luvion-nav-rwd .navbar .navbar-nav .nav-item:hover a,
+.luvion-nav-rwd .navbar .navbar-nav .nav-item.active a {
+  color: #35edd6;
+  font-weight: 700;
 }
